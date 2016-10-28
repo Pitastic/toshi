@@ -1,5 +1,8 @@
 # Toshi
 
+## Announcement:
+We are winding down the hosted service toshi.io, and it will be fully retired on Dec 15th, 2016. The open source code will stay available on github.
+
 [![Build Status](https://img.shields.io/travis/coinbase/toshi/master.svg?style=flat)](https://travis-ci.org/coinbase/toshi)
 [![Code Climate](https://img.shields.io/codeclimate/github/coinbase/toshi.svg?style=flat)](https://codeclimate.com/github/coinbase/toshi)
 [![Inline Docs](http://inch-ci.org/github/coinbase/toshi.svg?style=flat)](http://inch-ci.org/github/coinbase/toshi)
