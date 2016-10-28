@@ -37,6 +37,21 @@ html, body {
   -webkit-text-size-adjust: none; /* Never autoresize text */
 }
 
+.announcement {
+  min-height: 50px;
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(15, 31, 56);
+  z-index: 100;
+  color: #C6CEDD;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // TOP NAVIGATION
 ////////////////////////////////////////////////////////////////////////////////

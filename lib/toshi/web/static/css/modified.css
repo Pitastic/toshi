@@ -300,6 +300,22 @@ header .fork {
 .github_link > a:hover h2 {
   color: #4483BB;
 }
+
+.announcement {
+  height: 50px;
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(21, 53, 78);
+  z-index: 10000;
+  padding: 13px 50px;
+  color: #C6CEDD;
+  text-align: center;
+  font-size: 14px;
+}
+
 /* ==========================================================================
   Section Style
   ========================================================================== */
