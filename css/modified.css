@@ -379,7 +379,7 @@ div[class*="feature"] > div {
   position: absolute;
   z-index: 1000;
   right: 0;
-  top: 50px;
+  top: 0;
   width: 110px;
   height: 110px;
 }
