@@ -6,7 +6,9 @@ web: &web
   ports:
    - "5000:5000"
   environment:
-    TOSHI_ENV: development
+    - TOSHI_ENV=production
+    - DATABASE_URL=postgres://postgres:@db:5432/toshi_production
+    - REDIS_URL=redis://redis/0
   command: bundle exec puma
 blockworker:
   <<: *web
@@ -19,8 +21,8 @@ transactionworker:
 peermanager:
   <<: *web
   ports: []
-  command: bundle exec ruby bin/peer_manager.rb
+  command: sh -c "bundle exec find /usr/local/bundle -type f -iname protocol.rb -exec sed -i '/size > 0 ? (string, payload = payload.unpack(/s/size/size.to_s.to_i/g' {} \; && ruby bin/peer_manager.rb"
 db:
-  image: "postgres:9.3"
+  image: "postgres:latest"
 redis:
-  image: "redis:2.8"
+  image: "redis:latest"
