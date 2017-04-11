@@ -26,3 +26,12 @@ db:
   image: "postgres:latest"
 redis:
   image: "redis:latest"
+maria:
+  image: "mariadb:latest"
+  ports:
+   - "3800:3306"
+  volumes:
+   - /opt/toshi/mysql/:/var/lib/mysql
+  environment:
+   - MYSQL_ROOT_PASSWORD=toshi
+   - MYSQL_DATABASE=toshi
