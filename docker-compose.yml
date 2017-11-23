@@ -7,7 +7,7 @@ web: &web
    - "5000:5000"
   environment:
     - TOSHI_ENV=test
-    - DATABASE_URL=postgres://postgres:@db:5432/toshi_production
+    - DATABASE_URL=postgres://postgres:@db:5432/toshi_test
     - REDIS_URL=redis://redis/0
   command: bundle exec puma
 blockworker:
