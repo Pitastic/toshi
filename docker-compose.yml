@@ -6,7 +6,7 @@ web: &web
   ports:
    - "5000:5000"
   environment:
-    - TOSHI_ENV=production
+    - TOSHI_ENV=test
     - DATABASE_URL=postgres://postgres:@db:5432/toshi_production
     - REDIS_URL=redis://redis/0
   command: bundle exec puma
